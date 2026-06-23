@@ -2,8 +2,11 @@ Community:
 The community chosen for this project comes from the subreddit r/nba. This community discourse ranges from emotionally-charged game reactions to deeply researched statistical arguments. The three labels for this dataset are analysis, hot-take, and reaction. These labels capture the distinction that the community makes informally between "real arguments" and "takes" as the NBA discourse is quite notorious for claims based on a single statistic. The key boundary rule is that evidence must causally support the claim. These distinctions matter for people of this community as it assists new followers of the NBA to understand the key events of the NBA and allows users to distinguish between what is factual and what are personal opinions.
 
 Labels: 
+
 Analysis - A structured argument based on statistics, historical comparisons, or strategic observations. An example of this would be comparing a team's offensive rating with and without a specific player. For example, the New York Knicks offensive rating dropping from 119.7 to 109.8 without Jalen Brunson on the floor, highlighting his impact.
+
 Hot Take - A bold comment stated either without supporting evidence or evidence doesn't bear any weight. An example of this would be a fan stating that the Golden State Warriors 2010's dynasty was on of the softest dynasties in NBA history.
+
 Reaction - An immediate emotional response to an in-game event, which includes little to no argument as it mainly expresses a feeling in the moment. An example of this would be fans complaining about the referees making last minute calls, causing a team to lose the game. 
 
 Hard Edge Cases:
