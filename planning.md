@@ -24,3 +24,6 @@ To determine the success, we can look at the evaluation metrics and manually rev
 AI Tool Plan:
 Label Stress Testing - Ask the AI to generate several posts that purposefully sits at the boundary between two labels.
 Failure Analysis - Once the predictions have been created, the list of wrong predictions can be fed into an AI tool so that it can identify pattens before writing about it in the evaluation. Once the AI determines what the pattern is, a manual review would be done to confirm this pattern exists. 
+
+
+In the labeling of the examples, a couple examples were difficult to determine what label it falls under. An example of this would be "Kobe Bryant a couple days before he tore his Achilles. Hits 4 of the most unbelievable shots you'll ever see to win the game against Toronto." This example was difficult to label as the post was mainly a video clip of Kobe Bryant scoring insane shots to beat the Toronto Raptors. The post includes a description of what happened in the video clip but is also skewed in the sense that it describes Kobe's shots as the best shots you'll ever see. Ultimately, I decided to label this example as a reaction because of the user who uploaded the clip is clearly reacting to the in-game events that transpired. 
