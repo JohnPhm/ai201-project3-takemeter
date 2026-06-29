@@ -7,14 +7,14 @@ The model itself did yield some misclassifications. Examples of this include "TH
 The evaluation results json file and the confusion matrix are attached in this repository but the information that it contains are as detailed. 
 
 evaluation_results.json:
-baseline_accuracy	0.4333
-finetuned_accuracy	0.5
-improvement	0.0667
-test_set_size	30
-label_map	
-Analysis	0
-Hot Take	1
-Reaction	2
+baseline_accuracy	0.4333  
+finetuned_accuracy	0.5  
+improvement	0.0667  
+test_set_size	30  
+label_map	  
+Analysis	0  
+Hot Take	1  
+Reaction	2  
 model	"distilbert-base-uncased"
 
 confusion_matrix.png:
