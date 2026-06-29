@@ -2,6 +2,17 @@
 
 This project's intention was to parse information from posts on the r/NBA subreddit and classify them into three different categories. These categories include analysis, hot take, and reaction.
 
+Label Definitions: 
+Analysis - A structured argument based on statistics, historical comparisons, or strategic observations. An example of this would be comparing a team's offensive rating with and without a specific player. For example, the New York Knicks offensive rating dropping from 119.7 to 109.8 without Jalen Brunson on the floor, highlighting his impact.
+
+Hot Take - A bold comment stated either without supporting evidence or evidence doesn't bear any weight. An example of this would be a fan stating that the Golden State Warriors 2010's dynasty was on of the softest dynasties in NBA history.
+
+Reaction - An immediate emotional response to an in-game event, which includes little to no argument as it mainly expresses a feeling in the moment. An example of this would be fans complaining about the referees making last minute calls, causing a team to lose the game.
+
+Hard Edge Cases: Any ambiguous cases include posts that have a confident claim with exactly one statistic attached to it but the statistic attached doesn't actually prove the point.
+
+Data Collection Plan: To collect data on this community, posts from the r/nba subreddit will be pulled and skimmed, more specifically from old.reddit.com/r/nba. These posts will vary in terms of style, including recent game threads and discussion style posts. Since there are three labels, there will be approximately 60-70 examples of each label to ensure that there is an even distribution of the labels. If the label distribution is underrepresented after the 200 examples, then more examples of that labels will be pulled from the r/nba subreddit to even out the label distribution.
+
 The model itself did yield some misclassifications. Examples of this include "THE OKLAHOMA CITY THUNDER HAVE BEEN ELEIMINATED FROM THE 2026 NBA CHAMPIONSHIP CONTENTION" (which was predicted to be an analysis when it should have been a reaction), "Giannis has 1 playoff series win over the last 5 years. This trade wiill be a disaster for Miami" (which was predicted to be an analysis when it was a hot take), or "Allen Iverson in Australia. Absolutely disgusting." (which was predicted to be a hot take when it should have been a reaction). The model misclassified these due to the context and reasoning behind the post. The model does not have access to the entire post with the user's comments and reasoning for the title so its judgement is misled. This lack of context provided for the model prevents it from making accurate judgement of how to label each post. 
 
 The evaluation results json file and the confusion matrix are attached in this repository but the information that it contains are as detailed. 
